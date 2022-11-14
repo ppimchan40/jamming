@@ -15,12 +15,12 @@ export class Playlist extends Component {
   }
   render() {
     const {playListTrack,playListName,onRemove,onSave} = this.props
-    console.log(onSave)
+
     return (
       <div className="Playlist">
       <input value={playListName} onChange={this.handleNameChange}/>
       <TrackList list={playListTrack} onRemove={onRemove} isRemoval={true}/>
-      <button className="Playlist-save" onClick={this.props.onSave}>SAVE TO SPOTIFY</button>
+      <button className="Playlist-save" onClick={onSave}>SAVE TO SPOTIFY</button>
     </div>
     )
   }

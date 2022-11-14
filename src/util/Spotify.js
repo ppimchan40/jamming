@@ -126,7 +126,6 @@ const Spotify = {
       console.log(responseAddTrack);
     } catch (error) {
       console.log(error);
-      this.removeToken();
     }
   },
 };
