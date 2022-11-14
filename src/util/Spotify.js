@@ -27,8 +27,8 @@ const Spotify = {
       console.log(expire_time);
       localStorage.setItem('access_token', access_token);
       localStorage.setItem('expired_time', expire_time);
-      window.setTimeout(() => localStorage.removeItem('access_token'), +expire_time);
-      window.setTimeout(() => localStorage.removeItem('expired_time'), +expire_time);
+      window.setTimeout(() => localStorage.removeItem('access_token'), +expire_time * 1000);
+      window.setTimeout(() => localStorage.removeItem('expired_time'), +expire_time * 1000);
       // window.history.pushState('Access Token', null, '/');
       window.location.hash = '';
       // window.location.href.substr(0, window.location.href.indexOf('#'));
