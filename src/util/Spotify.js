@@ -1,5 +1,5 @@
 const CLIENT_ID = 'c4a247d32255493ca3d6b0a0fbd1d6ba';
-const REDIRECT_URI = 'http://localhost:3000';
+const REDIRECT_URI = 'https://jamming-five.vercel.app';
 const API_END_POINT = 'https://api.spotify.com/v1';
 
 const Spotify = {
