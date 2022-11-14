@@ -71,7 +71,6 @@ const Spotify = {
       return searchTrackList;
     } catch (error) {
       console.log(error);
-      this.removeToken();
     }
   },
 
