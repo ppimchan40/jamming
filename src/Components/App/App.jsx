@@ -57,6 +57,9 @@ export class App extends Component {
     console.log(searchResults)
   }
 
+  componentDidMount() {
+    Spotify.getAccessToken()
+  }
   render() {
     return (
       <div>
